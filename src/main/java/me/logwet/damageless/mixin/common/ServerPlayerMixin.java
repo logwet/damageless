@@ -24,6 +24,6 @@ public abstract class ServerPlayerMixin extends Player {
                             target =
                                     "Lnet/minecraft/world/entity/player/Player;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z"))
     private boolean overrideHurt(Player player, DamageSource source, float amount) {
-        return super.hurt(source, 40F);
+        return super.hurt(source, 1000.0F);
     }
 }
